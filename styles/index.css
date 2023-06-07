@@ -97,6 +97,7 @@ footer {
 .clock h1 {
     margin: 1rem;
     font-size: 6em;
+    text-align: center;
 }
 
 .clock h2 {
