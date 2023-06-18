@@ -23,14 +23,14 @@
             <small>Copyright ©<span id="copyrightYear"></span> Dheedene</small>
         </footer>
         <script>
-            const idk = document.getElementById("toggle-box");
+            const darkmodeBox = document.getElementById("toggle-box");
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                idk.innerHTML = '<input type="checkbox" id="toggle" checked>\
+                darkmodeBox.innerHTML = '<input type="checkbox" id="toggle" checked>\
                                  <span class="slider"></span>'
                 document.body.classList.add('dark-theme');
                 document.getElementById('full-logo').src="./images/logo_dheedene_black.svg";
             } else {
-                idk.innerHTML = '<input type="checkbox" id="toggle">\
+                darkmodeBox.innerHTML = '<input type="checkbox" id="toggle">\
                                  <span class="slider"></span>'
             }
         </script>
