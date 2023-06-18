@@ -11,10 +11,9 @@
     <body>
         <nav>
             <img id="full-logo" src="./images/logo_dheedene_white.svg" alt="logo" loading="lazy">
-            <a></a>
-            <div class="toggle" id="toggle-box">
+            <label class="switch" id="toggle-box">
                 
-            </div>
+            </label>
         </nav>
         <section class="clock">
             <h2 id="day-date"></h2>
@@ -26,13 +25,13 @@
         <script>
             const idk = document.getElementById("toggle-box");
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                idk.innerHTML = '<input type="checkbox" id="toggle" checked/>\
-                                <label for="toggle"></label>'
+                idk.innerHTML = '<input type="checkbox" id="toggle" checked>\
+                                 <span class="slider"></span>'
                 document.body.classList.add('dark-theme');
                 document.getElementById('full-logo').src="./images/logo_dheedene_black.svg";
             } else {
-                idk.innerHTML = '<input type="checkbox" id="toggle" />\
-                                <label for="toggle"></label>'
+                idk.innerHTML = '<input type="checkbox" id="toggle">\
+                                 <span class="slider"></span>'
             }
         </script>
         <script src="./scripts/index.js" async defer></script>
